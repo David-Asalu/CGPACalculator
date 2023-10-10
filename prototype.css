@@ -1,0 +1,883 @@
+*, html {
+
+    scroll-behavior: smooth ;
+  }
+  textarea:focus, input:focus, select:focus{
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(21, 156, 228, 0.4);
+    
+;
+}
+body{
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+}
+.section-head{
+    background-color:rgb(95, 182, 189) ;
+    height: fit-content;
+    width: 100%;
+     border-radius: 10px;
+  padding-bottom: 40px;
+    margin-bottom:50px;
+
+}
+.heading{
+    width: 45%;
+    float: left;
+    margin-left: 10%;
+}
+nav{
+   height: fit-content;
+ margin-bottom: 20px;
+ padding: 15px;
+
+}
+nav  h3{
+    margin: 0 auto;
+    font-size: 2rem;
+    color: white;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    margin-right: 23%;
+    display: inline;
+}
+.navbar-icon{
+    padding-top: 25px;
+    display: none;
+}
+.navbar-icon {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .navbar-icon span {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 80%;
+    height: 3px;
+    background-color: white;
+    transition: transform 0.3s ease;
+  }
+
+  .navbar-icon span:nth-child(1) {
+    transform: translateY(-6px);
+  }
+
+  .navbar-icon span:nth-child(3) {
+    transform: translateY(6px);
+  }
+
+  .navbar-icon.close span:nth-child(1),
+  .navbar-icon.close span:nth-child(3) {
+    transform: translateY(0) rotate(45deg);
+  }
+
+  .navbar-icon.close span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .navbar-icon.close span:nth-child(3) {
+    transform: translateY(0) rotate(-45deg);
+  }
+.socials{
+    position: relative;
+    top: 2px;
+    width: 20px;
+    display: inline;
+    padding-left: 0;
+    margin-left: 10px;
+}
+.email,.linkedin{
+    position: relative;
+    top: 0px;
+}
+
+.triangle {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-right: 8px solid white; /* Change the color and size as needed */
+    border-bottom: 4px solid transparent;
+     transform: rotate(-90deg);
+     margin-left: 10px;
+ 
+  }
+  nav{
+    position: relative;
+  }.dropdown-div{
+    position: relative;
+  }
+  .dropdown-div{
+    display: flex;
+    flex-direction: column;
+    display: inline-block;
+    max-width: 100px;
+  }
+  .navbar-dropdown{
+
+  display: none;
+    bottom: 10px;
+    width: 180px;
+    height: 75px;
+    border-radius: 3px;
+    background-color: white;
+   position: relative;
+   padding: 10px;
+  }
+.guide-p{
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 5%;
+    text-decoration: underline;
+    display: none;
+}
+  .navbar-dropdown p{
+    color: black;
+    padding: 0;
+    text-align: left;
+font-size: 0.9rem;
+margin-top: 5px;
+  }
+  .navbar-dropdown p:hover{
+color: rgb(35, 35, 195);
+      }
+    
+  .triangle-change {
+    transform: rotate(0deg);
+    transition: 0.3s;
+  }
+
+.email{
+ width: 23px;
+}
+.socials-link{
+    padding-right: 5px;
+    padding-left: 5px;
+}
+  
+.white-bg  h1 {
+    font-size: 2rem;
+  }
+  .white-bg  h2 {
+    font-size: 2rem;
+  }
+  .white-bg  p {
+    margin-bottom: 10px;
+  }
+  .white-bg   ul, ol {
+    padding-left: 20px;
+    margin-bottom: 10px;
+  }
+  .white-bg li {
+    margin-bottom: 5px;
+  }
+.button {
+    display: block;
+    border: none;
+    height: 60px;
+    background-color: #47B85C;
+    margin-left: 10%;
+    width: 250px;
+    border-radius: 4%;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: black;
+  }
+  .calculator_link{
+    text-decoration: underline;
+    color: blue;
+  }
+  li {
+    padding-top: 10px;
+    font-size: 1.1rem;
+    margin-right: 0px;
+  }
+  .svg-path{
+    fill: black;
+  }
+  .svg-path-2{
+    fill:black;
+    width: 40px;
+    margin-right: 20px;
+  }
+  .email-2{
+    width: 45px;
+    fill: black;
+  }
+  .twitter-2{
+    position: relative;
+    top:6px;
+  }
+  svg:hover{
+    fill:#1690ED
+  }
+  .svg-path:hover{
+    fill:#1690ED
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px 16px;
+    text-decoration: none;
+    position: relative;
+  }
+  .help{
+    margin-right: 0px;
+  }
+  li a:hover{
+    color: #186090;
+    transition: 0.2s;
+  }
+
+.white-bg{
+    height:fit-content;
+     width: 75%;
+     margin-left: 15%;
+     border-radius: 10px;
+     margin-bottom: 100px;
+
+}
+.instructions-flex{
+    width: 60%;
+}
+.flex{
+    display: flex;
+    width: 100%;
+    gap: 30px;
+}
+.flex >*{
+  gap: 0;
+}
+.ad-flex{
+    margin-top: 27px;
+   height: 600px;
+   width: 35%;
+   box-shadow: 0 0.25em 1em rgba(7,29,63,0.125);
+   border-radius: 5px;
+   padding: 30px;
+}
+
+
+.white-bg h3{
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+}
+.calculator-img{
+    width: 50px;
+    display: inline;
+    position: relative;
+    top: 15px;
+}
+.ad-1{
+ 
+    clear: both;
+    background-color: rgb(248, 245, 245);
+    height: 180px;
+}
+.header{
+    text-align: center;
+}
+.calculator {
+    background-color: rgb(253, 250, 250);
+    height: fit-content;
+    width: 85%;
+    margin-left: 5%;
+    border: 1px solid grey;
+    position: relative;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+
+}
+.float{
+    float: left;
+}
+
+.calculator-body{
+    width: 80%;
+     border-radius: 10px;
+    margin-left: 10%;
+    margin-bottom: 50px;
+
+}
+
+.calculator-body h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    padding-top: 30px;
+    text-align: left;
+    margin-left: 10%;
+    margin-bottom: 15px;
+    line-height: 1;
+    font-weight: 600;
+    color: #0D2451;
+}
+.calculator h1 {
+    line-height: 1;
+    padding-left: 10%;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+    font-size: 1.3rem;
+    color: black;
+    height: 60px;
+ 
+}
+.header p{
+    margin-left: 10%;
+    font-size: 1.2rem;
+    text-align: left;
+    color: white;
+    width: 60%;
+}
+ .about{
+    background-color: #398a92 ;
+    box-shadow: 0 0.25em 1em rgba(7,29,63,0.125);
+    margin-top: 150px;
+    text-align: center;
+    width: 100%;
+   border-radius: 10px;
+    height: fit-content;
+    display: block;
+ }
+
+ .about p{
+
+    margin-left: 5%;
+    padding-top: 0px;
+    font-family: 'ntserrat', sans-serif;
+    font-weight: bold;
+ } 
+ .link{
+    padding-top: 0;
+font-size: 1.3rem;
+text-decoration: underline;
+ }
+ 
+ .about h2,.about h3{
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding-top: 30px;
+  text-align: left;
+
+ } 
+ #share{
+    margin: 0;
+    padding: 0;
+    margin-right: 35px;
+ }
+ #guide{
+    margin-top: 100px;
+    margin-left: 2.5%;
+    width: 80%;
+    height: fit-content;
+    box-shadow: 0 0.25em 1em rgba(7,29,63,0.125);
+    padding: 10px;
+    padding-bottom: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+#guide h1{
+    padding-top: 0;
+
+    margin-bottom: 50px;
+  
+}
+#how{
+    font-size: 2.6rem;
+    color: black;
+}
+#nav-bottom{
+    text-align: left;
+    box-shadow: none;
+    margin-left: 43%;
+    padding-bottom: 0;
+}
+#nav-bottom-2{
+    text-align: left;
+    box-shadow: none;
+    margin-left: 38%;
+    padding-bottom: 0;
+}
+#developer-contact{
+    box-shadow: none;
+    font-size: 1.5rem;
+    color: #e0d72a;
+}
+.nav-bottom{display: inline;}
+.show{
+    display: block;
+
+}
+.hide{
+    display: none;
+}
+.socials-div{
+    margin-left: 40%;
+    }
+.mailto{
+    color:white;
+    text-align: center;
+}
+#copyright{
+    color: rgb(236, 236, 236);
+    margin-left: 39%;
+    text-align: left;
+}
+.link{
+    text-decoration: underline;
+}
+#link-1{
+    text-decoration: underline;
+}
+.svg-bottom{
+    fill: rgb(232, 230, 230);
+width: 40px;
+height: 40px;
+margin-right: 30px;
+margin-left: 0
+}
+.github{
+    fill: black;
+}
+.svg-bottom:hover{
+    fill: #1690ED;
+}
+.policy{
+    margin-left: 40px;
+    color: white;
+}
+.heading-bottom{
+    float: none;
+    margin-left: 20%;
+    color: white;
+}
+ @media (max-width:1200px){
+    .button {
+        margin-left: 5%;
+    }
+    
+    
+    .heading{
+        width: 50%;
+        margin-right: 1%;
+        margin-left: 3%; 
+    }
+    .calculator-body{
+margin-left: 0;
+        width: 100%;
+         
+    }
+    .header p {
+        margin-left: 5%;
+    }
+    .white-bg{
+        width: 90%;
+        margin-left: 4%;
+    }
+    .instructions-flex {
+        width: 90%;
+    }
+    .calculator-body h1,    .calculator-body h4{
+        margin-left: 5%;
+    }
+    .ad-1{
+        width: 80%;
+        margin-left: 2.5%;
+    }
+
+ }
+ @media (max-width: 934px){
+    nav  h3{
+
+          font-size: 1.5rem;
+    }
+.header h1{
+    padding-top: 0;
+}
+    .heading{
+      width:45% ;
+    
+    }
+  
+    .svg-bottom{
+        width: 30px;
+        height: 30px;
+    }
+    #copyright{
+        margin-left: 37%;
+    }
+    #nav-bottom-2 {
+        margin-left: 35%;
+    }
+ }
+ @media (max-width: 780px){
+.flex{
+    flex-direction: column;
+}
+
+  .dropdown-div{
+    display: none;
+  }
+.header p {
+
+    width: 80%;
+}
+.ad-flex{
+    width: 85%;
+    height: 100px;
+}
+.instructions li {
+    font-size: 1rem;
+}
+    nav  h3{
+          margin-right: 0;
+          font-size: 1.5rem;
+    }
+    .none{
+        display: none;
+    }
+.show{
+    display: block;
+
+}
+    #how{
+        font-size: 2rem;
+    }
+    .heading{
+
+        width: 80%;
+    }
+     .navbar-icon{
+  padding-top: 28px;
+  padding-bottom: 20px;
+        width: 35px;
+        display: block;
+    }
+    .calculator-body{
+        margin-left: 2.5%;
+           width: 95%;
+            
+       }
+
+    .calculator h1{
+font-size: 1.2rem;
+height: 60px;
+    }
+    .gpa-value-div {
+        font-size: 1rem;
+    }
+    
+    .none{
+        margin: 10px 15px;
+    }
+    .nav-bottom{
+        display: inline;
+        margin-right: 25%;
+    }
+    .heading-bottom{
+        margin-left: 0;
+    }
+.socials-div{
+    margin-left: 38%;
+}
+.socials-div-top{
+    margin-left: 0%;
+}
+#nav-bottom-2 {
+    margin-left: 33%;
+}
+#copyright {
+    margin-left: 35%;
+}
+ }
+ @media (max-width:645px){
+.semester h3{
+    width: 79%;
+}
+.name-div{
+    width: 100%;
+    border-top: none;
+
+}
+.about{
+    margin-top: 50px;
+}
+
+.ad-1 {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.top{
+    display: none;
+}
+.calculator-body{
+    background-color:rgb(109, 193, 201) ;
+    width: 100%;
+     border-radius: 10px;
+    margin-left: 0%;
+    margin-bottom: 50px;
+}
+
+   .white-bg{
+     width: 90%;
+     margin-left: 5%;
+     height: fit-content;
+}
+
+#copyright{
+    margin-left: 34%;
+}
+.socials-div {
+    margin-left: 33%;
+}
+.socials-div-top{
+    margin-left: 0%;
+}
+#nav-bottom-2 {
+    margin-left: 28%;
+}
+#nav-bottom {
+    margin-left: 40%;
+}
+.span{
+    position: relative;
+    bottom:10px;
+    left: 50%;
+    color: red;
+}
+}
+@media (max-width: 520px){
+    .semester h3 {
+        width: 77%;
+        font-size: 1.25rem;
+    }
+    .button {
+        display: block;
+        height: 40px;
+        background-color: #47B85C;
+        margin-left: 5%;
+        width: 200px;
+        border-radius: 4%;
+        font-size: 1rem;
+        color: white;
+    }
+    
+    .white-bg{
+        width: 95%;
+    }
+    .instructions-flex {
+        width: 100%;
+    }
+ 
+    .selections p{
+        font-size: 1rem;
+    }
+    .calculator-body h4{
+        font-size: 1.1rem;
+    }
+    .header h1{
+        font-size: 1.7rem;
+    }
+    .info{
+        margin-left: 5%;
+        font-size:1rem ;
+    }
+    .scale-select {
+        width: 75%;
+        margin: 0;
+        padding-left: 15px;
+    }
+    .calculate_cgpa{
+        height: 52px;
+    }
+    .new-semester button{
+        width: 120%;
+        
+    }
+    .new-semester{
+        margin-left: 20%;
+    }
+    input{
+        font-size: 1rem;
+    }
+
+.credit-selection{
+    font-size: 1rem;
+}
+.steps img {
+    width: 300px;
+}
+#guide{
+    width: 90%;
+}
+#how{
+    margin-left: 0;
+    text-align: center;
+}
+.none{
+    margin: 10px 3px;
+}
+.heading-bottom{
+    margin-left: 0;
+}
+
+.socials-div {
+    margin-left: 33%;
+}
+.socials-div-top{
+    margin-left: 0%;
+}
+#copyright {
+    margin-left: 27%;
+}
+.instructions h2{
+    font-size: 1.5rem;
+}
+.instructions ol li {
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+ul{
+    padding-left: 0;
+}
+.cgpa{
+    margin-left: 10px;
+}
+ }
+ @media (max-width: 428px){
+    .steps img {
+        width: 250px;
+    }
+    th, td {
+        font-size: 0.8rem;
+           padding: 4px;
+   
+       }
+    .steps h1 {
+        font-size: 1.2rem;
+    }
+    .none{
+        padding: 18px 9.8px;
+        margin: 10px 0px;
+    }
+    .ad-flex {
+        width: 80%;
+    }
+  #nav-bottom{
+    margin-left: 39%;
+  }
+  .socials-div {
+    margin-left: 30%;
+}
+#nav-bottom-2 {
+    margin-left: 23%;
+}
+#copyright {
+    margin-left: 22%;
+}
+ }
+ @media (max-width: 375px){
+     .percentage{
+        margin-top: 10px;
+    }
+    .p-percentage{
+        margin-top: 0;
+    }
+    #nav-bottom-2 {
+        margin-left: 15%;
+    }
+    .ad-flex {
+        width: 75%;
+    }
+    th, td {
+        font-size: 0.7rem;
+        padding: 2px;
+     
+    }
+    table{
+        position: relative;
+        right: 4%;
+    }
+    nav h3{
+font-size: 1.4rem;
+    }
+        .none {
+        padding: 18px 7px;
+        margin: 10px 5px;
+    }
+    .guide-p{
+        font-size: 1.2rem;
+    }
+ }
+    @media (max-width: 370px){
+.info{
+    margin-left: 0;
+}
+.semester h3 {
+    width: 75%;
+    font-size: 1.25rem;
+}
+.steps h1 {
+    font-size: 1.12rem;
+}
+#nav-bottom {
+    margin-left: 35%;
+}
+.socials-div {
+    margin-left: 25%;
+}
+.socials-div-top{
+    margin-left: 0%;
+}
+#copyright{
+    margin-left: 15%;
+}
+    }
+    @media (max-width: 345px){
+           nav h3{
+            font-size: 1.4rem;
+           }
+           .heading {
+          margin-left: -2%;
+          width: 93%;
+          margin-right: 0%;
+        }
+        #developer-contact {
+            box-shadow: none;
+            font-size: 1.4rem;
+            color: #c4bc24;
+        }
+        .about h3 {
+            font-size: 1.6rem;
+         
+        }
+    }
+    @media (max-width: 320px){
+        .calculator-img{
+            margin-left: 0;
+        }
+    }
+    .bottom{
+        margin-bottom: 0;
+    }

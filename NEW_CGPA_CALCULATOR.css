@@ -1,0 +1,1241 @@
+*, html {
+
+    scroll-behavior: smooth ;
+  }
+  textarea:focus, input:focus, select:focus{
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(21, 156, 228, 0.4);
+    
+;
+}
+body{
+    background-color: white;
+}
+a{
+    text-decoration: none;
+}
+.policy{
+    margin-left: 40px;
+    color: white;
+}
+.heading{
+    width: 50%;
+    float: left;
+    margin-left: 10%;
+}
+nav{
+   height: fit-content;
+ margin-bottom: 20px;
+ padding: 15px;
+ box-shadow: 0 0.25em 1em rgba(7,29,63,0.125);
+}
+nav  h3{
+    margin: 0 auto;
+    font-size: 2rem;
+    color: white;
+    padding-top: 0px;
+ padding-bottom: 20px;
+  margin-right: 20%;
+    display: inline;
+}
+.navbar-icon{
+    padding-top: 25px;
+    display: none;
+}
+.navbar-icon {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .navbar-icon span {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 80%;
+    height: 3px;
+    background-color: white;
+    transition: transform 0.3s ease;
+  }
+  .triangle {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-right: 8px solid white; /* Change the color and size as needed */
+    border-bottom: 4px solid transparent;
+     transform: rotate(-90deg);
+     margin-left: 10px;
+ 
+  }
+  .dropdown-div{
+    display: flex;
+    flex-direction: column;
+    max-width: 100px;
+  }
+  .navbar-dropdown{
+
+  display: none;
+    bottom: 10px;
+    width: 180px;
+    height: 75px;
+    border-radius: 3px;
+    background-color: white;
+   position: relative;
+   padding: 10px;
+  }
+
+  .navbar-dropdown p{
+    color: black;
+    padding: 0;
+    text-align: left;
+font-size: 0.9rem;
+margin-top: 5px;
+  }
+  .navbar-dropdown p:hover{
+color: rgb(35, 35, 195);
+      }
+    
+  .triangle-change {
+    transform: rotate(0deg);
+    transition: 0.3s;
+  }
+
+  .navbar-icon span:nth-child(1) {
+    transform: translateY(-6px);
+  }
+
+  .navbar-icon span:nth-child(3) {
+    transform: translateY(6px);
+  }
+
+  .navbar-icon.close span:nth-child(1),
+  .navbar-icon.close span:nth-child(3) {
+    transform: translateY(0) rotate(45deg);
+  }
+
+  .navbar-icon.close span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .navbar-icon.close span:nth-child(3) {
+    transform: translateY(0) rotate(-45deg);
+  }
+.socials{
+    position: relative;
+    top: 2px;
+    width: 20px;
+    display: inline;
+    padding-left: 0;
+    margin-left: 10px;
+}
+.email,.linkedin{
+    position: relative;
+    top: 0px;
+}
+.email{
+ width: 23px;
+}
+.socials-link{
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    padding-top: 10px;
+    font-size: 1.1rem;
+    float: left;
+    margin-right: 0px;
+  }
+  .svg-path{
+    fill: black;
+  }
+  .svg-path-2{
+    fill:black;
+    width: 40px;
+    margin-right: 20px;
+  }
+  .email-2{
+    width: 45px;
+    fill: black;
+  }
+  .twitter-2{
+    position: relative;
+    top:6px;
+  }
+  svg:hover{
+    fill:#1690ED
+  }
+  .svg-path:hover{
+    fill:#1690ED
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px 16px;
+    text-decoration: none;
+    position: relative;
+  }
+  .help{
+    margin-right: 0px;
+  }
+  li a:hover{
+    color: #186090;
+    transition: 0.2s;
+  }
+  .guide-p{
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 5%;
+    text-decoration: underline;
+    display: none;
+}
+body{
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+    margin: 0 auto;
+}
+.white-bg{
+    height:fit-content;
+     background-color: white;
+     width: 60%;
+     margin-left: 10%;
+     border-radius: 10px;
+     box-shadow: 0 0.25em 1em rgba(7,29,63,0.125);
+     margin-bottom: 100px;
+}
+.calculator-img{
+    width: 50px;
+    display: inline;
+    position: relative;
+    top: 15px;
+}
+.ad-1{
+ 
+    clear: both;
+    background-color: rgb(248, 245, 245);
+    height: 180px;
+}
+.header{
+    text-align: center;
+}
+.calculator {
+    background-color: rgb(253, 250, 250);
+    height: fit-content;
+    width: 85%;
+    margin-left: 5%;
+    border: 1px solid grey;
+    position: relative;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+
+}
+.float{
+    float: left;
+}
+
+.calculator-body{
+    background-color:rgb(109, 193, 201) ;
+    width: 80%;
+     border-radius: 10px;
+    margin-left: 10%;
+    height: 600px;
+    margin-bottom: 50px;
+
+}
+
+.calculator-body h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    padding-top: 50px;
+    color: white;
+    text-align: left;
+    margin-left: 10%;
+    margin-bottom: 15px;
+    line-height: 1;
+}
+.calculator h1 {
+    line-height: 1;
+    padding-left: 10%;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+    font-size: 1.3rem;
+    color: black;
+    height: 60px;
+ 
+}
+.calculator-body h4{
+    line-height: 1.;
+    color: #182133;
+    font-size: 1.4rem;
+    font-weight:light;
+    font-family: 'Montserrat', sans-serif;
+    margin: 2%;
+    text-align: left;
+    margin-left: 10%;
+    width: 70%;
+    margin-bottom: 60px;
+}
+.calculator-body h2{
+  
+    font-size: 1.3rem;
+    font-weight:800;
+}
+.semester{
+    background-color: #d0f6f6;
+    width: 100%;
+display: flex;
+}
+
+.semester h3{
+    font-size: 1.5rem;
+   margin-left: 5%;
+    margin-bottom: 15px;
+    width: 84.5%;
+}
+.x-semester{
+    margin-top: 38px;
+    font-size: 1.5rem;
+    color: rgb(92, 91, 91);
+    margin-left: 100%;
+}
+.x-semester:hover{
+    color: rgb(246, 42, 42);
+    transition: 0.5s; 
+}
+.flex{
+    display: flex;
+}
+.flex-three{
+    display: flex;
+}
+.flex-three div{
+    flex: 1 1 auto;
+    width: 40%;
+
+}
+.flex-two{
+    display: flex;
+}
+.flex-two div{
+    flex: 1 1 auto;
+    width: 40%;
+
+}
+.yo{
+    width: 33%;
+}
+.flex-four{
+    display: flex;
+    flex-wrap: wrap;
+}
+.grade-div,.credit-div{
+  
+    width: 31%;
+    padding: 0 1%;
+    border-top:1px solid grey ;
+}
+.name-div{
+    width: 32%;
+    padding: 0 1%;
+    border-top:1px solid grey ;
+}
+
+.name-div input{
+    width: 100%;
+
+}
+.name-div input:focus{
+margin-bottom: 2px;
+}
+
+input {
+    font-family: 'Lato', sans-serif;
+    background-color: white;
+    width: 100%;
+    height: 40px;
+    border-radius: 3px;
+    border: none;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 0;
+    margin-top: 10px;
+}
+.span{
+    position: relative;
+    bottom:8px;
+    left: 70%;
+    color: red;
+    display:none;
+}
+.selections{
+    display:flex;
+ background-color: rgb(109, 193, 201);
+    padding-top: 30px;
+}
+.selections div{
+    width: 80%;
+    margin-left: 5%;
+}
+.selections p{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.credit-selection, .credit-selection-top{
+    background-color: white;
+    height: 40px;
+    border-radius: 3px;
+    border: none;
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 10px;
+  
+    
+ }
+ option{
+    
+    text-align: left;
+    padding: 5px;
+ }
+
+ .credit-selection{
+    width: 80%;
+    padding: 8px;
+    color: grey;
+    font-family: 'Lato', sans-serif;
+ }
+.credit-selection:checked{
+    color: black;
+}
+
+ .flex{
+
+    margin-bottom: 30px;
+    border-radius: 10px;
+} 
+.adder,  .remove-course{
+  width: 100%;
+    color: yellowgreen;
+    font-size: 1rem;
+    height: 40px;
+    }
+    .remove-course{
+        color: rgb(183, 48, 48);
+    }
+.calc-button{
+    height: 40px;
+    background-color: rgb(2, 70, 2);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+}
+.calc-button:hover{
+
+    background-color: rgb(28, 100, 33);
+    transition: 1s;
+    color: white;
+
+}
+.calc-button:active{
+
+    background-color: rgb(28, 100, 33);
+    transition: 1s;
+    color: white;
+
+}
+.gpa-value-div{
+    clear: both;
+    margin-bottom: 30px;
+    margin-left: 5%;
+    border-radius: 0;
+    text-align: left;
+    height: fit-content;
+    width: 80%;
+    text-align: center;
+      border-bottom: 1px solid rgb(225, 223, 223);;
+text-align: left;
+}
+.gpa-value-div h3{
+    margin-top: 5px;
+}
+.gpa-value-div input{
+    margin: 0;
+    height: 40px;
+    width: 70px;
+    font-weight: bold;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    -webkit-appearance:none;
+
+    margin-top: 5px;
+    font-size: 1.5rem;
+    color: black;
+}
+input:disabled{
+    -webkit-text-fill-color:black;
+    opacity: 1;
+}
+.scale-select, .new-semester {
+    width: 43%;
+    background-color: rgb(20, 175, 189);
+    color: white;
+    z-index: 2;
+    position: relative;
+    border: none;
+}
+.scale-select{
+    width: 75%;
+    margin:0;
+    padding-left: 50px;
+}
+#country{
+    width: 75%;
+    background-color:rgb(20, 175, 189);
+    color: white;
+    z-index: 2;
+    position: relative;
+   height: 40px;
+   border-radius: 3px;
+   border: none;
+   text-align: center;
+   font-size: 1.1rem;
+   padding-left: 5%;
+   
+}
+.new-semester,.remove-semester{
+   background-color: white;
+
+  width: 40%;
+  border-radius: 3px;
+ 
+
+ 
+}
+.new-semester{
+    margin-left: 28.5%;
+    margin-right: 5%;
+}
+.other-funcs{
+    clear:both ;
+}
+.new-semester button{
+    border: 1px solid rgb(28, 181, 195) ;
+  background-color: white;
+    color:rgb(28, 181, 195)  ;
+    height: 40px;
+    border-radius: 20px;
+    width: 100%;
+    padding: 0;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+.new-semester button:hover{
+    color: white;
+background-color:rgb(28, 181, 195)  ;
+transition: 1s;
+}
+.new-semester button:active{
+    color: white;
+background-color:rgb(28, 181, 195)  ;
+
+}
+
+.remove-semester button{
+         background-color: rgb(172, 15, 15);
+        color: white;
+        height: 40px;
+        border-radius: 20px;
+        width: 100%;
+        border: none;
+        padding: 0;
+        font-size: 1rem;
+      
+    }
+
+.gpa-value-div{
+    font-size: 1.3rem;
+    color: #285c84;
+    font-weight: bold;
+}
+
+.fa-solid{
+    margin-left: 10px;
+}
+.calculate_cgpa{
+    width: 70%;
+height: 52px;
+margin-left: 5%;
+background-color: rgb(6, 135, 6);
+color:white ;
+border-radius: 20px;
+border: 3px solid rgb(2, 70, 2);
+font-size: 1rem; 
+font-weight: bold;
+}
+.calculate_cgpa:hover{
+
+    background-color: rgb(28, 100, 33);
+    transition: 1s;
+    color: white;
+
+}
+.calculate_cgpa:active{
+
+    background-color: rgb(28, 100, 33);
+    transition: 1s;
+    color: white;
+
+}
+:root {
+    --bar-color: #46a896;
+    --text-color: white;
+    --bar-wrap-back-color: white;
+  }
+  
+  
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: min(90%, 800px);
+    margin-left: 5%;
+  }
+  
+  .info{
+    margin-top: 5px;
+    margin-left: 20%;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  .status-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .title {
+    padding: 0;
+    margin: 0;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    
+    color: black;
+  }
+  
+  .bar-wrap {
+   height: 40px;
+    padding: 6px;
+    width: 75%;
+    border-radius: 100px;
+    box-shadow: 0 0.25em 1em rgba(7,29,63,0.125);
+
+  }
+  
+  .bar {
+    width: 0%;
+    height: 40px;
+    transition: width .15s ease-out;
+    background-color: var(--bar-color);
+    border-radius: 100px;
+    box-shadow: inset -1px -1px 10px rgb(0 0 0 / .5);
+  }
+  .p-percentage,.percentage{
+
+    width: 75%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .percentage{
+    width: 100%;
+    margin-left: 5%;
+    display: block;
+  }
+.cgpa-value {
+    width:20%;
+}
+.cgpa-value-label{
+font-size: 1.2rem;
+}
+
+.cgpa-value-div{
+    margin-left: 25%;
+
+}
+.x-mark-div{
+    float: left;
+    padding-top: 100px;
+    margin-left: 20px;
+}
+.x-mark{
+  color: rgb(164, 164, 164);
+    padding-top: 20px;
+    display: block;
+    margin-bottom: 18.4px;
+    font-size: 1.4rem;
+ }
+ .x-mark:hover{
+    color: rgb(246, 42, 42);
+    transition: 1s;
+ }
+ .about{
+    background-color: #398a92 ;
+    box-shadow: 0 0.25em 1em rgba(7,29,63,0.125);
+    margin-top: 150px;
+    text-align: center;
+    width: 100%;
+   border-radius: 10px;
+    height: fit-content;
+    display: block;
+ }
+
+ .about p{
+
+    margin-left: 5%;
+    padding-top: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+ } 
+ .link{
+    padding-top: 0;
+font-size: 1.3rem;
+text-decoration: underline;
+ }
+ 
+ .about h2,h3{
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding-top: 30px;
+  text-align: left;
+
+ } 
+ #share{
+    margin: 0;
+    padding: 0;
+    margin-right: 35px;
+ }
+ #guide{
+    margin-top: 100px;
+    margin-left: 2.5%;
+    width: 80%;
+    height: fit-content;
+    box-shadow: 0 0.25em 1em rgba(7,29,63,0.125);
+    padding: 10px;
+    padding-bottom: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+#guide h1{
+    padding-top: 0;
+
+    margin-bottom: 50px;
+  
+}
+#how{
+    font-size: 2.6rem;
+    color: black;
+}
+#nav-bottom{
+    text-align: left;
+    box-shadow: none;
+    margin-left: 43%;
+    padding-bottom: 0;
+}
+#nav-bottom-2{
+    text-align: left;
+    box-shadow: none;
+    margin-left: 38%;
+    padding-bottom: 0;
+}
+#developer-contact{
+    box-shadow: none;
+    font-size: 1.5rem;
+    color: #e0d72a;
+}
+.nav-bottom{display: inline;}
+.steps {
+    margin-top: 50px;
+}
+.steps h1{
+    color:#186090;
+    font-size: 1.5rem;
+    display: inline;
+}
+.steps p {
+    margin-left: 10%;
+    width: 80%;
+}
+.steps h5{
+    font-size: 1.2rem;
+    margin-left: 5%;
+    color: #1690ED;
+    text-decoration: underline;
+}
+
+.steps img{
+    margin-top: 30px;
+    display: block;
+    width: 500px;
+    margin-left:10% ;
+}
+.show{
+    display: block;
+
+}
+
+.hide{
+    display: none;
+}
+.socials-div{
+    margin-left: 40%;
+    }
+.mailto{
+    color:white;
+    text-align: center;
+}
+#copyright{
+    color: rgb(236, 236, 236);
+    margin-left: 39%;
+    text-align: left;
+}
+.link{
+    text-decoration: underline;
+}
+#link-1{
+    text-decoration: underline;
+}
+.svg-bottom{
+    fill: rgb(232, 230, 230);
+width: 40px;
+height: 40px;
+margin-right: 30px;
+margin-left: 0
+}
+.github{
+    fill: black;
+}
+.svg-bottom:hover{
+    fill: #1690ED;
+}
+.heading-bottom{
+    float: none;
+    margin-left: 20%;
+    color: white;
+}
+ @media (max-width:1200px){
+
+    .heading{
+        width: 50%;
+        margin-right: 5%;
+        margin-left: 3%; 
+    }
+    .calculator-body{
+margin-left: 0;
+        width: 100%;
+         
+    }
+    .white-bg{
+        width: 70%;
+        margin-left: 2.5%;
+    }
+    .calculator-body h1,    .calculator-body h4{
+        margin-left: 5%;
+    }
+    .ad-1{
+        width: 80%;
+        margin-left: 2.5%;
+    }
+    .steps p, .steps img {
+        margin-left: 5%;
+    }
+ }
+ @media (max-width: 934px){
+    nav  h3{
+
+          font-size: 1.5rem;
+    }
+.header h1{
+    padding-top: 0;
+}
+    .heading{
+      width:45% ;
+      margin-left: 2%;
+    }
+    .white-bg{
+        width: 80%;
+    }
+    .svg-bottom{
+        width: 30px;
+        height: 30px;
+    }
+    #copyright{
+        margin-left: 37%;
+    }
+    #nav-bottom-2 {
+        margin-left: 35%;
+    }
+ }
+ @media (max-width: 780px){
+.white-bg{
+    width: 80%;
+}
+    nav  h3{
+          margin-right: 0;
+          font-size: 1.5rem;
+    }
+    .none{
+        display: none;
+    }
+.show{
+    display: block;
+
+}
+
+.dropdown-div{
+    display: none;
+  }
+    #how{
+        font-size: 2rem;
+    }
+    .heading{
+
+        width: 80%;
+    }
+     .navbar-icon{
+  padding-top: 28px;
+  padding-bottom: 20px;
+        width: 35px;
+        display: block;
+    }
+    .calculator-body{
+        margin-left: 2.5%;
+           width: 95%;
+            
+       }
+
+    .calculator h1{
+font-size: 1.2rem;
+height: 60px;
+    }
+    .gpa-value-div {
+        font-size: 1rem;
+    }
+    
+    .steps h1{
+        font-size: 1.5rem;
+    }
+    .steps img{
+    width: 400px;
+    }
+    .none{
+        margin: 10px 15px;
+    }
+    .nav-bottom{
+        display: inline;
+        margin-right: 25%;
+    }
+    .heading-bottom{
+        margin-left: 0;
+    }
+    .socials-div-top{
+        margin-left: 0%;
+    }
+#nav-bottom-2 {
+    margin-left: 33%;
+}
+#copyright {
+    margin-left: 35%;
+}
+ }
+ @media (max-width:645px){
+.semester h3{
+    width: 79%;
+}
+.name-div{
+    width: 100%;
+    border-top: none;
+
+}
+.about{
+    margin-top: 50px;
+}
+
+.ad-1 {
+    width: 80%;
+    margin-left: 10%;
+}
+.grade-div,.credit-div{
+  
+    width: 48%;
+    padding: 0 1%;
+    border-top: none;
+    border-bottom:1px solid grey ;
+}
+.top{
+    display: none;
+}
+.calculator-body{
+    background-color:rgb(109, 193, 201) ;
+    width: 100%;
+     border-radius: 10px;
+    margin-left: 0%;
+    margin-bottom: 50px;
+}
+.calculator {
+    background-color: white;
+    height: fit-content;
+    width: 75%;
+    margin-left: 5%;
+    border: 1px solid grey;
+    position: relative;
+    border-radius: 10px;
+    border: none;
+}
+.flex-four{border: 1px solid rgb(193, 192, 192);
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+.name-div{
+padding: 0;
+}
+.name-div input{
+    width: 100%;
+    margin-top: 0;
+    border-bottom: 1px solid rgb(194, 190, 190);
+    background-color: #fcfcfc;
+
+}
+.credit-div input, .credit-selection{
+    width: 100%;
+    margin: 0%;
+    border-radius: 4px;
+
+}
+.credit-div input {
+    height: 40px;
+    width: 103%;
+    margin: 0%;
+    border-radius: 0px;
+    margin-left: 3%;
+    border-left: 1px solid rgb(194, 190, 190);
+}
+.grade-div, .credit-div{
+    border-bottom: none;
+    padding: 0;
+}
+.credit-selection{
+    padding: 8px;
+}
+.new-semester{
+    width: 50%;
+    margin-left: 25%;
+}
+.new-semester button{
+    height: 50px;
+    border-radius: 25px;
+}
+
+.x-mark-div{
+    float: left;
+    padding-top: 40px;
+    margin-left: 8%;
+
+}
+.x-mark{
+
+      padding-top: 0px;
+      margin-bottom: 68.4px;
+      display: block;
+      font-size: 1.5rem;
+   }
+   .white-bg{
+     width: 90%;
+     margin-left: 5%;
+     height: fit-content;
+}
+.steps img {
+    width: 350px;
+}
+#copyright{
+    margin-left: 34%;
+}
+.socials-div{
+    margin-left: 38%;
+}
+.socials-div-top{
+    margin-left: 0;
+}
+.span{
+    position: relative;
+    bottom:10px;
+    left: 50%;
+    color: red;
+}
+}
+@media (max-width: 520px){
+    .semester h3 {
+        width: 77%;
+        font-size: 1.25rem;
+    }
+    .selections p{
+        font-size: 1rem;
+    }
+    .calculator-body h4{
+        font-size: 1.1rem;
+    }
+    .header h1{
+        font-size: 2.1rem;
+    }
+    .info{
+        margin-left: 5%;
+        font-size:1rem ;
+    }
+    .scale-select {
+        width: 75%;
+        margin: 0;
+        padding-left: 15px;
+    }
+    .calculate_cgpa{
+        height: 52px;
+    }
+    .new-semester button{
+        width: 120%;
+        
+    }
+    .new-semester{
+        margin-left: 20%;
+    }
+    input{
+        font-size: 1rem;
+    }
+
+.credit-selection{
+    font-size: 1rem;
+}
+.steps img {
+    width: 300px;
+}
+#guide{
+    width: 90%;
+}
+#how{
+    margin-left: 0;
+    text-align: center;
+}
+.none{
+    margin: 10px 3px;
+}
+.heading-bottom{
+    margin-left: 0;
+}
+.socials-div {
+    margin-left: 33%;
+}
+#nav-bottom-2 {
+    margin-left: 28%;
+}
+#copyright {
+    margin-left: 27%;
+}
+ }
+ @media (max-width: 420px){
+    .steps img {
+        width: 250px;
+    }
+    .steps h1 {
+        font-size: 1.2rem;
+    }
+    .none{
+        padding: 18px 9.8px;
+        margin: 10px 0px;
+    }
+  #nav-bottom{
+    margin-left: 39%;
+  }
+  .socials-div {
+    margin-left: 30%;
+}
+#nav-bottom-2 {
+    margin-left: 23%;
+}
+#copyright {
+    margin-left: 22%;
+}
+ }
+ @media (max-width: 375px){
+     .percentage{
+        margin-top: 10px;
+    }
+    .p-percentage{
+        margin-top: 0;
+    }
+    #nav-bottom-2 {
+        margin-left: 15%;
+    }
+    .none {
+        padding: 18px 7px;
+        margin: 10px 10px;
+    }
+    .guide-p{
+        font-size: 1.2rem;
+    }
+ }
+    @media (max-width: 370px){
+.info{
+    margin-left: 0;
+}
+.semester h3 {
+    width: 75%;
+    font-size: 1.25rem;
+}
+.steps h1 {
+    font-size: 1.12rem;
+}
+#nav-bottom {
+    margin-left: 35%;
+}
+.socials-div {
+    margin-left: 25%;
+}
+#copyright{
+    margin-left: 15%;
+}
+    }
+    @media (max-width: 345px){
+           nav h3{
+            font-size: 1.4rem;
+           }
+           .heading {
+          margin-left: -2%;
+          width: 93%;
+          margin-right: 0%;
+        }
+        #developer-contact {
+            box-shadow: none;
+            font-size: 1.4rem;
+            color: #c4bc24;
+        }
+    }
+    @media (max-width: 320px){
+        .calculator-img{
+            margin-left: 0;
+        }
+    }
