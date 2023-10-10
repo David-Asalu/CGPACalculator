@@ -1,0 +1,83 @@
+var CalculatorBodyHeight =(document.querySelector(".calculator-body").clientHeight);
+ var new_CalculatorBodyHeight= CalculatorBodyHeight - 61.6
+ document.querySelector(".calculator-body").style.height= new_CalculatorBodyHeight + "px"
+ var CalculatorBodyHeight =(document.querySelector(".calculator-body").clientHeight);
+ var new_CalculatorBodyHeight= CalculatorBodyHeight + 65.6
+ document.querySelector(".calculator-body").style.height= new_CalculatorBodyHeight + "px"
+
+ var CalculatorBodyHeight =(document.querySelector(".calculator-body").clientHeight);
+ var new_CalculatorBodyHeight= CalculatorBodyHeight - 61.6
+ document.querySelector(".calculator-body").style.height= new_CalculatorBodyHeight + "px"
+
+/*function removesemesterpro(){  
+   alert(semestersarray)
+   if(semesters>=0)
+   {
+      semesters_no--
+    semesters--
+   }
+   var val= Number(document.querySelector(".white-bg").clientHeight);
+   if(val >= 250){
+   var val= (document.querySelector(".white-bg").clientHeight);
+   var new_calculator_height= val - 565
+   
+  document.querySelector(".white-bg").style.height= new_calculator_height + "px"}
+calculators_divs =document.querySelectorAll(".whole-calculator")
+
+var last = calculators_divs[calculators_divs.length - 1];
+last.parentNode.removeChild(last);
+
+var CalculatorBodyHeight =(document.querySelector(".calculator-body").clientHeight);
+if(CalculatorBodyHeight>= 440)
+var new_CalculatorBodyHeight= CalculatorBodyHeight - 540
+document.querySelector(".calculator-body").style.height= new_CalculatorBodyHeight + "px"
+
+
+}
+*/
+   /*  function calculate_cgpa(val){
+               var incorrect_input = 0;
+                        const sum = gpas_array.reduce(function(a,b ){return a+b});
+                        GpaArrayLength= gpas_array.length
+                        cgpa= sum/GpaArrayLength
+                        cgpa_string= cgpa.toString()
+                       cgpa_approx = cgpa_string.slice(0,4)
+                  credit_input= document.querySelectorAll(".credit-div-input")
+                  grade_selected= document.querySelectorAll(".credit-selection")
+                       for (y=0; y<credit_input.length ; y++){
+                        if(credit_input[y].value == "" &&  grade_selected[y].options[grade_selected[y].selectedIndex].value != "null" ){
+                            var error="Please input a credit"
+                            document.querySelector(".cgpa-value").value = ""   
+               credit_input[y].style.border="2px solid red"
+               credit_input[y].scrollIntoView()
+                           incorrect_input++
+                        }
+                        else if(credit_input[y].value !== "" &&  grade_selected[y].options[grade_selected[y].selectedIndex].value == "null" ){
+                           alert("Please select a grade")
+                           document.querySelector(".cgpa-value").value = ""   
+               grade_selected[y].style.border="2px solid red"
+               grade_selected[y].scrollIntoView()
+                           incorrect_input++
+                        }
+                      
+                        if (incorrect_input == 0 && y == credit_input.length-1 ){
+                           document.querySelector(".cgpa-value").value = cgpa_approx
+                           
+               credit_input[y].style.border="1px solid white"
+                       }
+            
+            
+            
+                     }
+            gpa-value-'+semesters+'
+            
+            
+            
+                     }
+               */
+           <div class="remove-semester">
+               <button class="remove-semester" onclick="removesemester()">
+               Delete a semester   <i class="fa-solid fa-trash-can"></i>
+
+               </button>
+               </div>

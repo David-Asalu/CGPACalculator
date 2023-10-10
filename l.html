@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .error-message {
+      color: red;
+      display: none;
+    }
+  </style>
+  <script>
+    function validateInput() {
+      var input = document.getElementById('myInput');
+      var error = document.getElementById('error');
+
+      var inputValue = input.value.trim();
+
+      if (inputValue === '') {
+        error.style.display = 'block';
+        error.innerHTML = 'Please enter a value.';
+        input.classList.add('error');
+        return false;
+      }
+
+      if (!isValidNumber(inputValue)) {
+        error.style.display = 'block';
+        error.innerHTML = 'Please enter a valid number.';
+        input.classList.add('error');
+        return false;
+      }
+
+      // Additional validation checks can be added here
+
+      // If the input is valid, hide the error message and remove the error class
+      error.style.display = 'none';
+      input.classList.remove('error');
+      return true;
+    }
+
+    function isValidNumber(value) {
+      // Regular expression to check if the value consists of numbers only
+      var numberRegex = /^\d+$/;
+      return numberRegex.test(value);
+    }
+  </script>
+</head>
+<body>
+  <input id="myInput" type="text" required>
+  <span id="error" class="error-message"></span>
+  <button onclick="validateInput()">Submit</button>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Calculator</title>
+    <link href="CGPA_CALCULATOR.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/01b8147270.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="ad-1">
+
+    </div>
+    <section class="calculator-body">
+ 
+        <div class="header hello"> <h1>CGPA Calculator</h1>
+        <h4>Choose your country to use the calculator. If your country isn't in the list, choose a country that uses a similar grading system to yours.</h4>
+        </div>
+        <div class="white-bg">
+            <div >    
+                <select id="country" onchange="countryselect() ; redogpa()">
+                    <option value="" disabled selected>Select a country</option>
+                    <option value="USA">USA</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="Canada">Canada</option>
+                  
+                  </select>
+                  
+                <select class="credit-selection-top scale-select" name="cars" onchange="save_selected(this); redogpa()" >
+                <option class="selected"  value="select course credit" disabled selected>Choose Cgpa scale</option>
+                        <option value="4.0">4.0. (Click to change scale)</option>
+                       <option value="5">5.0. <span class="scale-info">(Click to change scale)</span></option>
+                      
+                     </select>
+                    </div>   <div class="whole-calculator first-calculator">
+   <h3 class="semester">Semester 1</h3>
+   <div class="flex">
+    <div class="name-div">  
+        <input class="names-input" type="text"   placeholder="Course name" onclick="gpa_array(0)" onkeyup="gpa_array(0)">
+   </div>  
+   <div class="credit-div">  
+    <input class="credit-div-input credit-div-input-0 " type="number" min ="1"  placeholder="Input credit" onclick="gpa_array(0)" onkeyup="gpa_array(0)">
+</div>  
+<div class="grade-div">  
+            
+    <select name="grades" class="credit-selection credit-selection-0" >
+       
+      
+      </select>
+      </div>
+   </div>
+   <section class="calculator">
+  <div class="names ">
+
+    <h1>
+        Course name (optional)
+        </h1>  
+        <div class="names-0">
+          
+        <div class="name-div">  
+            <input class="names-input" type="text"   placeholder="Course name" onclick="gpa_array(0)" onkeyup="gpa_array(0)">
+       </div>  
+       <div class="name-div">  
+        <input class="names-input" type="text"   placeholder="Course name" onclick="gpa_array(0)" onkeyup="gpa_array(0)">
+   </div>  
+   <div class="name-div">  
+    <input class="names-input" type="text"   placeholder="Course name" onclick="gpa_array(0)" onkeyup="gpa_array(0)">
+</div>  
+<div class="name-div">  
+    <input class="names-input" type="text"   placeholder="Course name" onclick="gpa_array(0)" onkeyup="gpa_array(0)">
+</div>  
+</div>
+  <button class="add-course adder add1"  value="0" onclick=add_div(this.value)>
+    Add a course
+ </button>            
+ <button class="calc-button" value="0" onclick= calculate_gpa(this.value)  >
+    Calculate GPA <i class="fa-solid fa-calculator"></i>
+ </button>
+</div>
+
+</div>
+<div class="credit float">
+    <h1>
+        Course Credit / Unit
+        </h1>
+        
+    
+    <div class="credit-only" value="0">
+    
+    <div class="credit-div">  
+        <input class="credit-div-input credit-div-input-0 " type="number" min ="1"  placeholder="Input credit" onclick="gpa_array(0)" onkeyup="gpa_array(0)">
+   </div>  
+   <div class="credit-div">  
+       <input class="credit-div-input credit-div-input-0" placeholder="Input credit" type="number" min ="1" onclick="gpa_array(0)" onkeyup="gpa_array(0)">
+   </div>  
+   
+   
+   <div class="credit-div">  
+       <input class="credit-div-input credit-div-input-0" placeholder="Input credit" type= number min ="1" onclick="gpa_array(0)" onkeyup="gpa_array(0)">
+   </div>  
+   
+   <div class="credit-div">  
+       <input class="credit-div-input credit-div-input-0" placeholder="Input credit" type="number" min ="1" onclick="gpa_array(0)" onkeyup="gpa_array(0)">
+   </div>  
+
+</div>
+   
+<div class="gpa-value-div">
+    <label class="label-gpa" for="gpa-value-div"> Semester 1 GPA:</label>
+              <input class="gpa-value" name="gpa-value-div" disabled >
+          </div>  
+        <button class="remove-course" onclick= remove_div(this.value) value="0">
+            Remove course
+         </button>  
+ 
+
+      </div>   
+<div class="grade float" >
+<h1>Grade </h1>
+
+
+
+
+<div class="grade-only"> 
+         <div class="grade-div">  
+            
+            <select name="grades" class="credit-selection credit-selection-0" >
+               
+              
+              </select>
+              </div>
+                 <div class="grade-div">     <select class="credit-selection credit-selection-0 " name="cars" onchange="gpa_array(0)">
+             
+                         </select>
+                        </div>
+     
+                 
+                 <div class="grade-div">     <select class="credit-selection credit-selection-0 " name="cars" onchange="gpa_array(0)">
+                
+                         </select>
+                        </div>
+          
+                 <div class="grade-div">     <select class="credit-selection credit-selection-0 " name="cars" onchange="gpa_array(0)">
+                   
+                         </select>
+                        </div>
+                   
+          </div>
+      
+         
+          <div class="float x-mark-div x-mark-div-0" >
+            <i class="fa-regular fa-circle-xmark x-mark" data="0" ></i>
+
+
+            <i class="fa-regular fa-circle-xmark x-mark " data="0"></i>
+            <i class="fa-regular fa-circle-xmark x-mark" data="0"></i>
+            <i class="fa-regular fa-circle-xmark x-mark" data="0"></i>
+                </div>
+
+
+                      </div> 
+
+
+                    </section>
+                
+                
+                </div>
+                     <div class="other-funcs" >
+                      <div>
+                     <button class="calculate_cgpa" onclick="calculate_cgpa()">
+Calculate CGPA <i class="fa-solid fa-calculator"></i>
+
+                     </button></div>
+                    
+                     <div class="cgpa-value-div">
+                        <label class="cgpa-value-label">
+           CGPA value:
+
+                        </label>
+                        <input class="cgpa-value" disabled>
+                     </div>
+                     <div class="new-semester ">
+   
+                        <button class="" onclick= add_semester();countryselect() >
+                         Add a semester <i class="fa-solid fa-plus"></i>
+                      </button> 
+                    </div>
+                    <button class="remove-semester" onclick="removesemester()">
+                    Delete a semester   <i class="fa-solid fa-trash-can"></i>
+
+                    </button>
+                    </div>
+             
+              
+</section>
+<i class="fa-thin fa-delete-left"></i>
+    <script src="CGPA_CALCULATOR.js"></script>
+</body>
+</html>
